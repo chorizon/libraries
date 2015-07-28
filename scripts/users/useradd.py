@@ -27,7 +27,7 @@ parser = argparse.ArgumentParser(description='Create a new unix email account.')
 
 parser.add_argument('--user', help='The new username using how prefix the domain', required=True)
 parser.add_argument('--password', help='Password for the new account', required=False)
-parser.add_argument('--directory', help='Password for the new account', required=False)
+parser.add_argument('--directory', help='directory for the new account', required=False)
 parser.add_argument('--group', help='Group for the new account', required=False)
 
 args = parser.parse_args()
