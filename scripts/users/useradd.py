@@ -70,7 +70,7 @@ if os.geteuid()==0:
 			
 			if retcode == 0:
 				print(json.JSONEncoder().encode([1, 'USER_ADDED']))
-				exit(1)
+				exit(0)
 			elif retcode == 6:
 			
 				print(json.JSONEncoder().encode([0, 'NO_EXISTS_GROUP']))
