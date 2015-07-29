@@ -77,7 +77,7 @@ if os.geteuid()==0:
 				exit(1)
 			
 			elif retcode == 9:
-				print(json.JSONEncoder().encode([1, 'USER_EXISTS']))
+				print(json.JSONEncoder().encode([0, 'USER_EXISTS']))
 				exit(1)
 			else:
 				print(json.JSONEncoder().encode([0, 'UNKNOWN_EROR']))
